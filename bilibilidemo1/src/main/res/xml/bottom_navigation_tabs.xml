@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs> xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<tab-->
+        <!--id="@+id/tab_home"-->
+        <!--icon="@drawable/ic_bottom_navigation_home"-->
+        <!--title="首页"-->
+        <!--/>-->
+
+    <!--<tab-->
+        <!--id="@+id/tab_one"-->
+        <!--icon="@drawable/ic_bottom_navigation_home"-->
+        <!--title="活动"-->
+        <!--/>-->
+
+    <!--<tab-->
+        <!--id="@+id/tab_two"-->
+        <!--icon="@drawable/ic_bottom_navigation_home"-->
+        <!--title="任务"-->
+        <!--/>-->
+
+    <!--<tab-->
+        <!--id="@+id/tab_three"-->
+        <!--icon="@drawable/ic_bottom_navigation_home"-->
+        <!--title="点点"-->
+        <!--/>-->
+
+    <!--<tab-->
+        <!--id="@+id/tab_four"-->
+        <!--icon="@drawable/ic_bottom_navigation_home"-->
+        <!--title="我的"-->
+        <!--/>-->
+
+
+
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_bottom_navigation_home"
+        title="首页"
+        />
+
+    <tab
+        id="@+id/tab_one"
+        icon="@drawable/ic_bottom_navigation_home"
+        title="活动"
+        />
+
+    <tab
+        id="@+id/tab_two"
+        icon="@drawable/ic_bottom_navigation_home"
+        title="任务"
+        />
+
+    <tab
+        id="@+id/tab_three"
+        icon="@drawable/ic_bottom_navigation_home"
+        title="点点"
+        />
+
+    <tab
+        id="@+id/tab_four"
+        icon="@drawable/ic_bottom_navigation_home"
+        title="我的"
+        />
+</tabs>

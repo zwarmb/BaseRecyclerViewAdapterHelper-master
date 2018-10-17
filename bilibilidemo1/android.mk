@@ -1,0 +1,1 @@
+LOCAL_PROGUARD_ENABLED:= disabled

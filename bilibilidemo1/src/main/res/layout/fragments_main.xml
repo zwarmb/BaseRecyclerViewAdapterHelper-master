@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contentContainer"
+        android:layout_above="@+id/bottomBar"
+        ></FrameLayout>
+
+
+    <com.roughike.bottombar.BottomBar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bottomBar"
+        android:layout_alignParentBottom="true"
+        app:bb_activeTabColor="@color/colorPrimary"
+        app:bb_inActiveTabColor="@color/colorAccent"
+        app:bb_tabXmlResource="@xml/bottom_navigation_tabs"
+        app:bb_titleTextAppearance="@style/TextAppearance.AppCompat"
+        ></com.roughike.bottombar.BottomBar>
+</RelativeLayout>

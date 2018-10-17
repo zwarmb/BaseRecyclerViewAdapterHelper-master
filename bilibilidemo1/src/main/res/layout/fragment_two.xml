@@ -1,0 +1,311 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:layout_editor_absoluteX="0dp"
+       tools:layout_editor_absoluteY="81dp"
+       tools:parentTag="android.support.constraint.ConstraintLayout">
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/template_main_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:content="@+id/top_image"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/template_save"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_btn_shop"
+        app:layout_constraintEnd_toStartOf="@+id/template_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <ImageView
+        android:id="@+id/template_delete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_btn_shop"
+        app:layout_constraintEnd_toStartOf="@+id/template_cancel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/template_save"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <ImageView
+        android:id="@+id/template_cancel"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_btn_shop"
+        app:layout_constraintEnd_toStartOf="@+id/template_edit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/template_delete"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <ImageView
+        android:id="@+id/template_edit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_btn_shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/template_cancel"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="286dp"
+        />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="286dp"
+        />
+
+</merge>
+
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.bilibilidemo1.view.two.TwoFragment"
+    >
+
+    <!--<include layout="@layout/toolbar"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Two"-->
+        <!--android:textSize="50sp"-->
+        <!--android:gravity="center"-->
+        <!--/>-->
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root"
+        tools:showIn="@layout/activity_main"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.app.androidkt.constraintlayoutb.MainActivity"
+        >
+
+
+        <!--<Button-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="32dp"-->
+            <!--android:layout_marginTop="32dp"-->
+            <!--android:text="Button"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:text="Button"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/button"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/button3"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/button"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="32dp"-->
+            <!--android:text="Button"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/button"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/top_image"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@mipmap/ic_btn_shop"-->
+            <!--/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/save"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/ic_btn_shop"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/edit"-->
+            <!--android:src="@mipmap/ic_btn_shop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/cancel"-->
+            <!--android:src="@mipmap/ic_btn_shop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="16dp" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/delete"-->
+            <!--android:src="@mipmap/ic_btn_shop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="16dp"/>-->
+
+        <Button
+            android:id="@+id/btCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="0"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btAlign"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="30"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="60"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="90"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="120"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="150"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="210"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="240"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="270"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="300"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <Button
+            android:id="@+id/btn_12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"
+            app:layout_constraintCircle="@id/btCenter"
+            app:layout_constraintCircleAngle="330"
+            app:layout_constraintCircleRadius="120dp" />
+
+
+        <android.support.constraint.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gp_1"
+            app:constraint_referenced_ids="btn_8, btn_3, btn_5"
+            android:visibility="gone"
+            />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
