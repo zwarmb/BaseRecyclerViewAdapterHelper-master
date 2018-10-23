@@ -91,15 +91,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         recyclerView.addItemDecoration(new SectionDecoration(new SectionDecoration.DecorationCallback() {
-                    @Override
-                    public long getGroupId(int position) {
-                        return Character.toUpperCase(mList.get(position).getStr().charAt(0));
-                    }
-                    @Override
-                    public String getGroupFirstLine(int position) {
-                        return mList.get(position).getStr().substring(0, 1).toUpperCase();
-                    }
-                }, this));
+            @Override
+            public long getGroupId(int position) {
+                return Character.toUpperCase(mList.get(position).getStr().charAt(0));
+            }
+
+            @Override
+            public String getGroupFirstLine(int position) {
+                return mList.get(position).getStr().substring(0, 1).toUpperCase();
+            }
+        }, this));
 
         recycleview1Adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override

@@ -1,4 +1,4 @@
-package com.example.yida.demo3.glide;
+package com.example.yida.demo3.picture.glide;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;

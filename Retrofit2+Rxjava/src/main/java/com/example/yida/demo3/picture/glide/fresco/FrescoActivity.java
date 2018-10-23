@@ -1,4 +1,4 @@
-package com.example.yida.demo3.fresco;
+package com.example.yida.demo3.picture.glide.fresco;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

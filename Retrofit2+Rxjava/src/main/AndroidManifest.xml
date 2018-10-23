@@ -24,7 +24,7 @@
         </activity>
 
         <activity android:name=".glide.GlideActivity"/>
-        <activity android:name=".fresco.FrescoActivity"/>
+        <activity android:name=".picture.glide.fresco.FrescoActivity"/>
     </application>
 
 </manifest>

@@ -53,4 +53,11 @@ dependencies {
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-12'
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-12'
     //没有使用特殊Header，可以不加这行
+
+
+    // UI卡顿监测框架BlockCanary
+    // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
+    debugCompile 'com.github.markzhai:blockcanary-android:1.5.0'
+    releaseCompile 'com.github.markzhai:blockcanary-no-op:1.5.0'
+
 }

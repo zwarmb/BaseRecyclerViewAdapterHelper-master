@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.yida.demo3.fresco.FrescoActivity;
-import com.example.yida.demo3.glide.GlideActivity;
+import com.example.yida.demo3.picture.glide.fresco.FrescoActivity;
+import com.example.yida.demo3.picture.glide.GlideActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
