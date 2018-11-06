@@ -31,6 +31,7 @@
         <activity android:name=".view.glide.GlideTestActivity"/>
         <activity android:name=".view.viewpager.ViewPagerActivity"/>
         <activity android:name=".view.fang_qq_space.ShadeActivity"/>
+        <activity android:name=".view.pai_xu.PaiXuActivity"/>
     </application>
 
 </manifest>

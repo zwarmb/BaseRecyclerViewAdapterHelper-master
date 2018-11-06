@@ -17,6 +17,7 @@ import com.example.demo1.view.SimpleDraweeView.SimpleDraweeViewActivity;
 import com.example.demo1.view.fang_qq_space.ShadeActivity;
 import com.example.demo1.view.glide.GlideTestActivity;
 import com.example.demo1.view.leida.LeidaActivity;
+import com.example.demo1.view.pai_xu.PaiXuActivity;
 import com.example.demo1.view.viewpager.ViewPagerActivity;
 
 import java.util.ArrayList;
@@ -132,6 +133,10 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent5 = new Intent(getApplicationContext(), ShadeActivity.class);
                         startActivity(intent5);
                         break;
+                    case 6:
+                        Intent intent6 = new Intent(getApplicationContext(), PaiXuActivity.class);
+                        startActivity(intent6);
+                        break;
                 }
             }
         });
@@ -140,18 +145,34 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData1() {
         mList = new ArrayList<>();
-        for (int i = 10; i < 99; i++) {
+        String[] strings = {"仿网易广告滚动显示", "条目滚动", "雷达属性", "glide", "轮播图", "仿QQ空间广告显示", "排序"};
+
+        for (int i = 0; i < /*strings.length*/ 100; i++) {
             rvBean rvBean = new rvBean();
+//            for (int j = 0; j < strings.length; j++) {
+//                rvBean.setStr(strings[j]);
+//
+//            }
+            if (strings.length > i) {
+                rvBean.setName(strings[i]);
+            } else {
+                rvBean.setName("大爷的");
+            }
             rvBean.setStr(i + "");
             rvBean.setContent(99 - i + "");
             mList.add(rvBean);
         }
+
+
+//        mList.addAll(rvBean.setStr(""), rvBean.setContent(""));
+//        mList.addAll(new rvBean("", ""));
     }
 
 
     public static class rvBean {
         String str;
         String content;
+        String name;
 
         public String getStr() {
             return str;
@@ -167,6 +188,14 @@ public class MainActivity extends AppCompatActivity {
 
         public void setContent(String content) {
             this.content = content;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
         }
     }
 }

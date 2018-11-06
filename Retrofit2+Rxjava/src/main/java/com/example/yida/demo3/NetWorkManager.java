@@ -1,7 +1,8 @@
 package com.example.yida.demo3;
 
+import com.example.yida.demo3.net.RequestApi;
+
 import okhttp3.OkHttpClient;
-import okhttp3.Request;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -13,7 +14,7 @@ public class NetWorkManager {
 
     private static NetWorkManager mInstance;
     private static Retrofit sRetrofit;
-    private static volatile Request sRequest = null;
+    private static volatile RequestApi sRequest = null;
 
     public static NetWorkManager getInstance() {
         if (mInstance == null) {
@@ -33,17 +34,17 @@ public class NetWorkManager {
 
         sRetrofit = new Retrofit.Builder()
                 .client(client)
-                .baseUrl(com.example.yida.demo3.net.Request.HOST)
+                .baseUrl(RequestApi.HOST)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
     }
 
-    public static Request getRequest() {
+    public static RequestApi getRequest() {
         if (sRequest == null) {
-            synchronized (Request.class) {
-                sRequest = sRetrofit.create(Request.class);
+            synchronized (RequestApi.class) {
+                sRequest = sRetrofit.create(RequestApi.class);
             }
         }
         return sRequest;

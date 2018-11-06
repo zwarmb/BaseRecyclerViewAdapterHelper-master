@@ -44,7 +44,7 @@ dependencies {
     // facebook 的图片加载Fresco
     implementation 'com.facebook.fresco:fresco:1.9.0'
     // 支持 GIF 动图，需要添加
-    compile 'com.facebook.fresco:animated-gif:0.12.0'
+    implementation 'com.facebook.fresco:animated-gif:0.12.0'
     // glide图片加载
     //    implementation 'com.github.bumptech.glide:glide:4.4.0'
     //    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
@@ -57,7 +57,7 @@ dependencies {
 
     // UI卡顿监测框架BlockCanary
     // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
-    debugCompile 'com.github.markzhai:blockcanary-android:1.5.0'
-    releaseCompile 'com.github.markzhai:blockcanary-no-op:1.5.0'
+    debugApi 'com.github.markzhai:blockcanary-android:1.5.0'
+    releaseApi 'com.github.markzhai:blockcanary-no-op:1.5.0'
 
 }

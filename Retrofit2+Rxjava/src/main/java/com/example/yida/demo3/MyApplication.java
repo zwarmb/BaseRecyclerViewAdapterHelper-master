@@ -16,6 +16,6 @@ public class MyApplication extends Application {
         // 初始化 fresco
         Fresco.initialize(this);
 
-
+        NetWorkManager.getInstance().init();
     }
 }

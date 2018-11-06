@@ -21,7 +21,7 @@ public class Recycleview1Adapter extends BaseQuickAdapter<MainActivity.rvBean, B
 
     @Override
     protected void convert(final BaseViewHolder helper, final MainActivity.rvBean item) {
-        helper.setText(R.id.textView, item.getStr()).setText(R.id.textView2, item.getContent());
+        helper.setText(R.id.textView, item.getStr()).setText(R.id.textView2, item.getContent()).setText(R.id.textView4, item.getName());
 //        helper.itemView.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
