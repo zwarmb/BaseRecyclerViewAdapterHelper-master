@@ -16,9 +16,11 @@ import com.example.demo1.view.SectionDecoration;
 import com.example.demo1.view.SimpleDraweeView.SimpleDraweeViewActivity;
 import com.example.demo1.view.fang_qq_space.ShadeActivity;
 import com.example.demo1.view.glide.GlideTestActivity;
+import com.example.demo1.view.huaweishichang_search.HuaWeiActivity;
 import com.example.demo1.view.leida.LeidaActivity;
 import com.example.demo1.view.pai_xu.PaiXuActivity;
 import com.example.demo1.view.viewpager.ViewPagerActivity;
+import com.example.demo1.view.zhe_die_lan.ZhedieActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -137,6 +139,14 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent6 = new Intent(getApplicationContext(), PaiXuActivity.class);
                         startActivity(intent6);
                         break;
+                    case 7:
+                        Intent intent7 = new Intent(getApplicationContext(), HuaWeiActivity.class);
+                        startActivity(intent7);
+                        break;
+                    case 8:
+                        Intent intent8 = new Intent(getApplicationContext(), ZhedieActivity.class);
+                        startActivity(intent8);
+                        break;
                 }
             }
         });
@@ -145,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData1() {
         mList = new ArrayList<>();
-        String[] strings = {"仿网易广告滚动显示", "条目滚动", "雷达属性", "glide", "轮播图", "仿QQ空间广告显示", "排序"};
+        String[] strings = {"仿网易广告滚动显示", "条目滚动", "雷达属性", "glide", "轮播图", "仿QQ空间广告显示", "排序", "仿华为应用市场搜索", "折叠栏"};
 
         for (int i = 0; i < /*strings.length*/ 100; i++) {
             rvBean rvBean = new rvBean();

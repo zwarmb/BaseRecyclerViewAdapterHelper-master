@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/AppTheme.NoActionBar"
         >
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -32,6 +32,10 @@
         <activity android:name=".view.viewpager.ViewPagerActivity"/>
         <activity android:name=".view.fang_qq_space.ShadeActivity"/>
         <activity android:name=".view.pai_xu.PaiXuActivity"/>
+        <activity android:name=".view.huaweishichang_search.HuaWeiActivity"/>
+        <activity android:name=".view.huaweishichang_search.MarketActivity"/>
+        <activity android:name=".view.huaweishichang_search.SearchActivity"/>
+        <activity android:name=".view.zhe_die_lan.ZhedieActivity"/>
     </application>
 
 </manifest>

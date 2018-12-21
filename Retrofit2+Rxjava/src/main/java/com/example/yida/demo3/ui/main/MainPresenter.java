@@ -3,7 +3,6 @@ package com.example.yida.demo3.ui.main;
 import com.example.yida.demo3.scheduler.BaseSchedulerProvider;
 
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
 
 /**
  * Created by yida on 2018/10/24.
@@ -28,9 +27,9 @@ public class MainPresenter {
         mCompositeDisposable.dispose();
     }
 
-    public void getList() {
-        Disposable disposable = mModel.getList()
-                .compose(mBaseSchedulerProvider.applySchedulers())
-                .subscribeWith(new );
-    }
+//    public void getList() {
+//        Disposable disposable = mModel.getList()
+//                .compose(mBaseSchedulerProvider.applySchedulers())
+//                .subscribeWith(new );
+//    }
 }
