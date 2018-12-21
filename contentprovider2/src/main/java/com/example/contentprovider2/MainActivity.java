@@ -1,6 +1,7 @@
 package com.example.contentprovider2;
 
 import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -29,7 +30,14 @@ public class MainActivity extends AppCompatActivity {
 
         // 获取contentResolver
         ContentResolver resolver = getContentResolver();
+        // 向表中插入数据
 
+        ContentValues values = new ContentValues();
+        values.put("_id", "3");
+        values.put("name", "小张");
+        values.put("token", "wwwwwasdasdasdasdasdasd");
+        // 通过contentResolver 向contentprovider中插入数据
+        resolver.insert(uri_user, values);
 
         // 通过contentResolver 向contentprovider中查询数据
         Cursor cursor = resolver.query(uri_user, new String[]{"_id", "name", "token"}, null, null, null);
