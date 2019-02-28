@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="leyou_color_light_grey">#F3F3F3</color>
+    <color name="leyou_color_orange">#FF7E00</color>
+    <color name="leyou_color_orange2">#FF8304</color>
+    <color name="leyou_color_half_transparent_background">#b0000000</color>
+    <color name="leyou_color_black2">#393939</color>
+    <color name="leyou_color_black3">#515151</color>
+    <color name="leyou_color_black4">#DADADA</color>
+    <color name="leyou_color_gray">#656565</color>
+    <color name="leyou_color_gray2">#DADADA</color>
+    <color name="leyou_color_gray3">#8E8E8E</color>
+    <color name="leyou_color_transparent">#00000000</color>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+</resources>

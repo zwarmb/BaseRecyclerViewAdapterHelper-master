@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="#3c3c3c">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/leyou_string_chargecenter"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/leyou_id_pay_iv_close"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/leyou_image_notice_close_normal"/>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/leyou_string_chargeaccount_pay"
+                            android:textColor="@color/leyou_color_gray"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/layout_dimens_text_middle" />
+
+                        <TextView
+                            android:id="@+id/leyou_id_pay_tv_chargeaccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentRight="true"
+                            android:text="12345689"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/leyou_color_black2"
+                            android:textSize="@dimen/layout_dimens_text_middle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/leyou_id_pay_tv_chargeaccount"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="@string/leyou_string_chargemoney_pay"
+                            android:textColor="@color/leyou_color_gray"
+                            android:textSize="@dimen/layout_dimens_text_middle" />
+
+                        <TextView
+                            android:id="@+id/leyou_id_pay_tv_chargemoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/leyou_id_pay_tv_chargeaccount"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="666"
+                            android:textColor="@color/leyou_color_black2"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/layout_dimens_text_middle" />
+
+                        <RelativeLayout
+                            android:id="@+id/leyou_id_pay_view_ptb"
+                            android:layout_width="match_parent"
+                            android:layout_below="@id/leyou_id_pay_tv_chargemoney"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center"
+                                android:text="@string/leyou_string_lebi_pay"
+                                android:textColor="@color/leyou_color_gray"
+                                android:textSize="@dimen/layout_dimens_text_middle" />
+
+                            <ImageView
+                                android:id="@+id/leyou_id_pay_tv_temp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/leyou_image_temp"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_marginTop="17dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/leyou_id_pay_tv_lebi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:layout_toLeftOf="@id/leyou_id_pay_tv_temp"
+                                android:textColor="@color/leyou_color_orange2"
+                                android:textSize="@dimen/layout_dimens_text_middle" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/leyou_id_pay_layout_resultpay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/leyou_id_pay_view_ptb"
+                            android:layout_marginRight="30dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center"
+                                android:text="@string/leyou_string_result_pay"
+                                android:textColor="@color/leyou_color_black2"
+                                android:textSize="@dimen/layout_dimens_text_middle" />
+
+                            <TextView
+                                android:id="@+id/leyou_id_pay_tv_resultpay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center"
+                                android:text="---"
+                                android:textSize="@dimen/layout_dimens_text_middle"
+                                android:textColor="#ff6905" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/leyou_id_pay_tv_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@id/leyou_id_pay_layout_resultpay"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/black" />
+
+                        <RelativeLayout
+                            android:id="@+id/leyou_id_paytype_layout_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/leyou_id_pay_tv_line" >
+
+                            <TextView
+                                android:id="@+id/leyout_id_pay_tv_checkpay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+
+                                android:layout_marginTop="10dp"
+                                android:text="@string/leyou_string_please_select_paytype_pay"
+                                android:textColor="@color/leyou_color_gray"
+                                android:textSize="@dimen/layout_dimens_text_big" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <GridView
+                        android:listSelector="@android:color/transparent"
+                        android:id="@+id/leyou_id_pay_gv_paytype"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#ffffff"
+                        android:horizontalSpacing="10dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:paddingTop="15dip"
+                        android:numColumns="4"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dip" >
+                    </GridView>
+
+                 </LinearLayout>
+                 
+            </ScrollView>
+            
+            <RelativeLayout
+                   android:layout_width="match_parent"
+             		android:layout_height="100dp">
+	            <Button
+	                android:layout_centerInParent="true"
+	             android:id="@+id/leyou_id_pay_btn_pay"
+	             android:layout_width="match_parent"
+	             android:layout_height="40dp"
+	             android:layout_marginLeft="25dp"
+	             android:layout_marginRight="25dp"
+	             android:background="#ff6905"
+	             android:gravity="center"
+	             android:text="@string/leyou_string_now_pay"
+	             android:textSize="@dimen/layout_dimens_text_big"
+	             android:textColor="@android:color/white" />
+	            
+            </RelativeLayout>
+</LinearLayout>

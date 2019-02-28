@@ -21,7 +21,7 @@ public class LeidaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_laida);
         mLeidaRadarView = findViewById(R.id.laida);
 
-        mLeidaRadarView.setCount(5);
+        mLeidaRadarView.setCount(6);
         mLeidaRadarView.setData(data);
         mLeidaRadarView.setMaxValue(10);
         mLeidaRadarView.setTitles(titles);

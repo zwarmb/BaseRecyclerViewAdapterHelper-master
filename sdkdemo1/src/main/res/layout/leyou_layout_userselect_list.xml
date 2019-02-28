@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pw"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/leyou_drawable_white_round_minimum"
+    android:gravity="center_vertical"
+     >
+    <ListView 
+        android:id="@+id/leyou_id_userselect_lv_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/leyou_drawable_round_minimum_selector"
+        android:divider="@color/leyou_color_gray2"
+        android:focusable="true"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:cacheColorHint="@android:color/transparent"
+        ></ListView>
+</LinearLayout>

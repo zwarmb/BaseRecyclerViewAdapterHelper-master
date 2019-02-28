@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@color/leyou_color_gray2"
+    android:gravity="center"
+    android:id="@+id/leyou_id_lebiselect_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3c3c3c">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/leyou_id_lebiselect_iv_back"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/leyou_image_left_arrow"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/leyou_string_lebiselect"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/leyou_id_lebiselect_iv_desc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/leyou_image_lebiselect_todesc"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leyou_string_no_use_lebi"
+            android:layout_centerVertical="true"
+            android:textColor="@color/leyou_color_gray3"
+            />
+
+        <CheckBox
+            android:id="@+id/leyou_id_lebiselect_cb_uselebi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/leyou_drawable_autologin_check_selector"
+            android:button="@null" />
+
+    </RelativeLayout>
+
+</LinearLayout>
