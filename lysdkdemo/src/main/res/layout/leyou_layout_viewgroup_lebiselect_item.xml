@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="65dp"
+	android:orientation="horizontal"
+	android:id="@+id/leyou_id_paytype_layout_item">
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:layout_width="100dp"
+			android:layout_height="match_parent"
+			android:background="@drawable/leyou_image_lebi_selectbg_left">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_centerInParent="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/leyou_id_lebiselectitem_tv_cointype"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:text="活动"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/layout_dimens_text_smali" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/leyou_id_lebiselectitem_tv_cointype"
+					android:layout_centerHorizontal="true"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="2dp"
+						android:gravity="bottom"
+						android:text="¥"
+						android:textColor="@android:color/white"
+						android:textSize="10sp" />
+
+					<TextView
+						android:id="@+id/leyou_id_lebiselectitem_tv_money"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="9999.99"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/layout_dimens_text_big" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/leyou_id_lebiselectitem_view_right"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/leyou_image_lebi_selectbg_right"
+			android:padding="7dp"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/leyou_id_lebiselectitem_tv_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:background="@android:color/white"
+				android:text="@string/leyou_string_lebi_ticket"
+				android:textColor="@color/leyou_color_black2"
+				android:textSize="@dimen/layout_dimens_text_middle" />
+
+			<TextView
+				android:id="@+id/leyou_id_lebiselectitem_tv_type"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginLeft="5dp"
+				android:layout_toRightOf="@id/leyou_id_lebiselectitem_tv_name"
+				android:background="@android:color/white"
+				android:textColor="@color/leyou_color_black2"
+				android:textSize="11sp" />
+
+			<TextView
+				android:id="@+id/leyou_id_lebiselectitem_tv_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:background="@android:color/white"
+				android:gravity="center"
+				android:text="2018-03-01 18:35:30到期"
+				android:textColor="@color/leyou_color_gray3"
+				android:textSize="9sp" />
+
+			<TextView
+				android:id="@+id/leyou_id_lebiselectitem_tv_action"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_above="@id/leyou_id_lebiselectitem_tv_date"
+				android:layout_below="@id/leyou_id_lebiselectitem_tv_name"
+				android:background="@android:color/white"
+				android:gravity="center"
+				android:layout_marginTop="3dp"
+				android:textColor="@color/leyou_color_gray3"
+				android:textSize="9sp" />
+
+			<ImageView
+				android:id="@+id/leyou_id_lebiselectitem_iv_check"
+				android:layout_width="15dp"
+				android:layout_height="15dp"
+				android:layout_centerInParent="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"
+				android:background="@drawable/leyou_image_login_noselect"
+				/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

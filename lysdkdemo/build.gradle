@@ -6,19 +6,14 @@ android {
 
 
     defaultConfig {
-        applicationId "com.example.contentprovider2"
-        minSdkVersion 15
+        applicationId "com.example.lysdkdemo"
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-    }
-
-    lintOptions {
-        disable 'GoogleAppIndexingWarning'
-        baseline file("lint-baseline.xml")
     }
 
     buildTypes {

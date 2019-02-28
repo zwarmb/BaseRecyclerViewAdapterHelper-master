@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
 
         // 通过contentResolver 向contentprovider中查询数据
         Cursor cursor = resolver.query(uri_user, new String[]{"_id", "name", "token"}, null, null, null);
-        while (cursor.moveToNext()) {
+        while (cursor != null && cursor.moveToNext()) {
             Log.e("接收数据", "id    " + cursor.getString(cursor.getColumnIndex("_id"))
                     + "name   " + cursor.getString(cursor.getColumnIndex("name"))
                     + "token     " + cursor.getString(cursor.getColumnIndex("token")));
         }
-
+        cursor.close();
 
     }
 }

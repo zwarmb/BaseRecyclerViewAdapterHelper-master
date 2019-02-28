@@ -1,0 +1,44 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="leyou_string_get_valid_code">获取验证码</string>
+    <string name="leyou_string_login">登录</string>
+    <string name="leyou_string_user_login">用户名登录</string>
+    <string name="leyou_string_phone_login">手机登录</string>
+    <string name="leyou_string_please_input_account">请输入账号</string>
+    <string name="leyou_string_please_input_limit_account">请输入6-11位的账号</string>
+    <string name="leyou_string_please_input_phone">请输入手机号</string>
+    <string name="leyou_string_please_input_username">请输用户名</string>
+    <string name="leyou_string_please_input_account_and_phone">请输入账号/手机号</string>
+    <string name="leyou_string_please_input_validcode">请输入验证码</string>
+    <string name="leyou_string_please_input_pwd">请输入6-15位密码</string>
+    <string name="leyou_string_forget_pwd">忘记密码</string>
+    <string name="leyou_string_account_register">账号注册</string>
+    <string name="leyou_string_onekey_username">一键用户名</string>
+    <string name="leyou_string_register_agreement">注册即代表同意</string>
+    <string name="leyou_string_register_agreement_click">《乐游服务使用协议》</string>
+    <string name="leyou_string_auto_login">自动登录</string>
+    <string name="leyou_string_chargecenter">充值中心</string>
+    <string name="leyou_string_lebiselect">乐币券</string>
+    <string name="leyou_string_chargeaccount_pay">充值账号：</string>
+    <string name="leyou_string_chargemoney_pay">充值金额：</string>
+    <string name="leyou_string_lebi_pay">&#160;&#160;&#160;&#160;乐币券：</string>
+    <string name="leyou_string_result_pay">还需支付：</string>
+    <string name="leyou_string_please_select_paytype_pay">请选择支付方式：</string>
+    <string name="leyou_string_now_pay">立即付款</string>
+    <string name="leyou_string_logining">正在登录</string>
+    <string name="leyou_string_welcome">，欢迎回来</string>
+    <string name="leyou_string_switch_account">切换账号</string>
+    <string name="leyou_string_complete_register">完成注册</string>
+    <string name="leyou_string_username_or_password_not_null">用户名密码不能为空</string>
+    <string name="leyou_string_phone_or_validcode_not_null">手机号或验证码不能为空</string>
+    <string name="leyou_string_register_success">注册成功</string>
+    <string name="leyou_string_login_success">登录成功</string>
+    <string name="leyou_string_back">返回</string>
+    <string name="leyou_string_register">注册</string>
+    <string name="leyou_string_lebi_ticket">乐币券</string>
+    <string name="leyou_string_no_use_lebi">不使用乐币券</string>
+    <string name="leyou_string_error_phone">手机格式有误</string>
+    <string name="leyou_string_error_pwd">密码长度有误</string>
+    <string name="leyou_string_lebidescribe">乐币券说明</string>
+    </resources>

@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="290dp"
+    android:layout_height="330dp"
+    android:layout_gravity="center"
+    android:background="@drawable/leyou_drawable_white_round_small"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    tools:context="com.leyou.sdk.ui.RegisterPhoneFragment">
+
+    <TextView
+        android:id="@+id/leyou_id_tv_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/leyou_color_black2"/>
+
+
+</LinearLayout>

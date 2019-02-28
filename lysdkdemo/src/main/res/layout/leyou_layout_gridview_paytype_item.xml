@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:orientation="vertical"
+	android:id="@+id/leyou_id_paytype_layout_item"
+	android:background="@drawable/leyou_image_checkpay_bg">
+    
+    <ImageView
+		android:id="@+id/leyou_id_paytype_iv_paytype"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付宝"
+		android:visibility="gone"
+        android:layout_below="@+id/leyou_id_paytype_iv_paytype"
+        android:textColor="@color/leyou_color_black2"
+        android:id="@+id/leyou_id_paytype_tv_typename"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:gravity="center"
+		android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

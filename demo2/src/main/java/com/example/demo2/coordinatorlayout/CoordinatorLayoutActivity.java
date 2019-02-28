@@ -45,7 +45,7 @@ public class CoordinatorLayoutActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
 
-//        initFragment();
+        initFragment();
 
     }
 

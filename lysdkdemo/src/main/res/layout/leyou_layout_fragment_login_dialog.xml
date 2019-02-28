@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="220dip"
+    android:layout_height="105dip"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@drawable/leyou_drawable_white_round_big"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.leyou.sdk.ui.LoginDialogFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/leyou_drawable_white_round_big"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/leyou_id_logindialog_iv_loadingtu"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/leyou_image_loading"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/leyou_id_logindialog_iv_loadingtu"
+                android:gravity="center"
+                android:text="@string/leyou_string_logining"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/layout_dimens_text_smali" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/leyou_id_logindialog_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="80dp"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:singleLine="true"
+            android:text="xxxxxxx"
+            android:textColor="@color/leyou_color_orange2"
+            android:textSize="@dimen/layout_dimens_text_smali" />
+
+        <TextView
+            android:id="@+id/leyou_id_logindialog_tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/leyou_string_welcome"
+            android:textColor="@color/leyou_color_black3"
+            android:textSize="@dimen/layout_dimens_text_smali" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/leyou_color_gray2" />
+
+    <TextView
+        android:id="@+id/leyou_id_logindialog_tv_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/leyou_drawable_white_round_big"
+        android:gravity="center"
+        android:text="@string/leyou_string_switch_account"
+        android:textColor="@color/leyou_color_orange2"
+        android:textSize="@dimen/layout_dimens_text_middle" />
+
+
+</LinearLayout>
